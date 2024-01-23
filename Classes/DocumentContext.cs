@@ -20,7 +20,7 @@ namespace savichev21pr.Classes
                 newDocument.src = dataDocuments.GetString(1);
                 newDocument.name = dataDocuments.GetString(2);
                 newDocument.user = dataDocuments.GetString(3);
-                newDocument.id_document = dataDocuments.GetInt32(4);
+                newDocument.id_document = dataDocuments.GetString(4);
                 newDocument.date = dataDocuments.GetDateTime(5);
                 newDocument.status = dataDocuments.GetInt32(6);
                 newDocument.vector = dataDocuments.GetString(7);
@@ -43,8 +43,8 @@ namespace savichev21pr.Classes
                     $"[Ответственный] = '{this.user}', " +
                     $"[Код документа] = '{this.id_document}', " +
                     $"[Дата поступления] = '{this.date.ToString("dd.MM.yyyy")}', " +
-                    $"[Статус] = '{this.status}', " +
-                    $"[Направление] = '{this.vector}', " +
+                    $"[Статус] = {this.status}, " +
+                    $"[Направление] = '{this.vector}' " +
                     $"WHERE [Код] = {this.id}", connection);
                 Common.DBConnection.CloseConnection(connection);
             }
@@ -59,7 +59,7 @@ namespace savichev21pr.Classes
                     "[Код документа], " +
                     "[Дата поступления], " +
                     "[Статус], " +
-                    "[Направление], " + "VALUES (" +
+                    "[Направление])" + "VALUES (" +
                     $"'{this.src}', " +
                     $"'{this.name}', " +
                     $"'{this.user}', " +

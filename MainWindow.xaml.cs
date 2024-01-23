@@ -31,7 +31,7 @@ namespace savichev21pr
         {
             InitializeComponent();
             init = this;
-            OpenPages(pages.main)
+            OpenPages(pages.main);
         }
 
         public void OpenPages(pages _pages)

@@ -9,7 +9,7 @@ namespace savichev21pr.Classes.Common
 {
     public class DBConnection
     {
-        public static readonly string Path = @"C:\Users\user\Desktop\Test.accdb";
+        public static readonly string Path = @"C:\Users\User\Desktop\savichev21pr\bin\Debug\Test.accdb";
         public static OleDbConnection Connection()
         {
             OleDbConnection oleDbConnection = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0; Data Source=" + Path);

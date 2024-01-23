@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="150" d:DesignWidth="600">
     <Grid>
-        <Image Source="/savichev21pr;component\Image\icon-black.png" HorizontalAlignment="Left"/>
+        <Image Height="100" x:Name="img" Source="/savichev21pr;component\Image\icon-black.png" HorizontalAlignment="Left"/>
         <Label x:Name="lName" Content="Наименование" FontWeight="Bold" HorizontalAlignment="Left" Margin="150,18,0,0" VerticalAlignment="Top" Width="179"/>
         <Label x:Name="lUser" Content="Ответственный: Иванов И.И." HorizontalAlignment="Left" Margin="150,48,0,0" VerticalAlignment="Top" Width="179"/>
         <Label x:Name="lCode" Content="Код документа: 000-000" HorizontalAlignment="Left" Margin="150,78,0,0" VerticalAlignment="Top" Width="179"/>

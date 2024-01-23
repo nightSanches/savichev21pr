@@ -20,8 +20,8 @@
         </Grid>
         <Grid Grid.Row="1" Background="White">
             <StackPanel ></StackPanel>
-            <Button Click="AddDocuments" Content="Выйти" HorizontalAlignment="Left" Margin="22,330,0,0" VerticalAlignment="Top" Height="30" Width="89"/>
-            <ScrollViewer Margin="22,10,22,45">
+            <Button Click="AddDocuments" Content="Добавить" HorizontalAlignment="Left" Margin="22,330,0,0" VerticalAlignment="Top" Height="30" Width="89"/>
+            <ScrollViewer Margin="135,10,22,45">
                 <StackPanel x:Name="parent"></StackPanel>
             </ScrollViewer>
         </Grid>
