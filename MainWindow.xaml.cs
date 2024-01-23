@@ -1,4 +1,5 @@
-﻿using System;
+﻿using savichev21pr.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,25 @@ namespace savichev21pr
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
+        public List<DocumentContext> AllDocuments = new DocumentContext().AllDocuments();
+        public enum pages{
+            main,
+            add
+        }
         public MainWindow()
         {
             InitializeComponent();
+            init = this;
+            OpenPages(pages.main)
+        }
+
+        public void OpenPages(pages _pages)
+        {
+            if (_pages == pages.main)
+                frame.Navigate(new Pages.Main());
+            if (_pages == pages.add)
+                frame.Navigate(new Pages.Add());
         }
     }
 }
