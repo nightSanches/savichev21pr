@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="savichev21pr.Elements.Item"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:savichev21pr.Elements"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="600">
+    <Grid>
+        <Image Source="/savichev21pr;component\Image\icon-black.png" HorizontalAlignment="Left"/>
+        <Label x:Name="lName" Content="Наименование" FontWeight="Bold" HorizontalAlignment="Left" Margin="150,18,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="lUser" Content="Ответственный: Иванов И.И." HorizontalAlignment="Left" Margin="150,48,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="lCode" Content="Код документа: 000-000" HorizontalAlignment="Left" Margin="150,78,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="lDate" Content="Дата поступления: 00.00.0000" HorizontalAlignment="Left" Margin="363,18,0,0" VerticalAlignment="Top" Width="210"/>
+        <Label x:Name="lStatus" Content="Статус: Входящий" HorizontalAlignment="Left" Margin="363,48,0,0" VerticalAlignment="Top" Width="210"/>
+        <Label x:Name="lDirect" Content="Направление: Строительство" HorizontalAlignment="Left" Margin="363,78,0,0" VerticalAlignment="Top" Width="210"/>
+        <Button Click="EditDocument" Content="Изменить" HorizontalAlignment="Left" Margin="329,115,0,0" VerticalAlignment="Top" Height="25" Width="103"/>
+        <Button Click="DeleteDocument" Content="Удалить" HorizontalAlignment="Left" Margin="456,115,0,0" VerticalAlignment="Top" Height="25" Width="103"/>
+
+    </Grid>
+</UserControl>
